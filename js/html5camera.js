@@ -1,6 +1,5 @@
 (function() {
-  var ua = window.navigator.appName;
-  if (ua === "Microsoft Internet Explorer") { // oh hai, MSIE!
+  if (window.navigator.appName === "Microsoft Internet Explorer") { // oh hai, MSIE!
     document.write('<div id="msg">Oh hai! Internet Explorer!<p>Try using modern ones like: <a href="//www.google.com">Google Chrome</a>, <a href="//www.mozilla.org/en-US/firefox/new/">Mozilla Firefox</a> or <a href="//www.opera.com/">Opera</a></p></div>');
   } else if(Modernizr.canvas) {
       var canvas = document.getElementById("canvas"),
